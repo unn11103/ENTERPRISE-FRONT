@@ -11,7 +11,7 @@ function App() {
   const [bookDesc, setDesc] = useState('')
 
   const fetchData = () => {
-    fetch("http://localhost:8081/api/books/")
+    fetch("http://139.59.226.178:8081/api/books/")
       .then(response => {
         return response.json()
       })
@@ -33,7 +33,7 @@ function App() {
         "description": bookDesc
       })
     }
-    fetch("http://localhost:8081/api/books/",requestOptions)
+    fetch("http://139.59.226.178:8081/api/books/",requestOptions)
     .then(response => {return response.json()})
 
     console.log(bookTitle);
