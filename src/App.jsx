@@ -21,8 +21,8 @@ function App() {
   }
 
   const handleSubmit = (e) =>{
-
-
+    e.preventDefault();
+    
     const requestOptions = {
       method: 'POST',
       headers: {
